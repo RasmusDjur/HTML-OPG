@@ -180,4 +180,272 @@ body {
     color: #000000; /* Black text on hover */
 }
 
+/* Box 4 Styling */
+.box-4 {
+    background-color: #ffffff; /* White background */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between the image and text */
+    padding: 50px;
+}
 
+/* Left side for the image */
+.box-4 .left-side img {
+    width: 100%; /* Make the image fill the container */
+    max-width: 500px; /* Optional: adjust based on your image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Right side for text */
+.box-4 .right-side {
+    max-width: 600px; /* Limit text width */
+    padding-left: 20px;
+}
+
+.box-4 .right-side h1 {
+    font-size: 36px; /* Headline size */
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 20px;
+}
+
+.box-4 .right-side p {
+    font-size: 18px; /* Smaller text */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 30px; /* Space between text and button */
+}
+
+.box-4 .right-side .btn {
+    background-color: #000000; /* Black background for the button */
+    color: #ffffff; /* White text */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block; /* Make it behave like a button */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.box-4 .right-side .btn:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #000000; /* Black text on hover */
+}
+
+/* Box 5 Styling */
+.box-5 {
+    background-color: #ffffff; /* Optional: Set white background for the box */
+    padding: 50px 0;
+}
+
+.box-5 .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure images stretch to the same height */
+    margin: 0; /* Remove any default margin */
+}
+
+.box-5 .image-item {
+    position: relative;
+    width: 33.33%; /* Each image takes up 1/3 of the container width */
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Ensure no padding between image containers */
+}
+
+.box-5 .image-item img {
+    width: 100%; /* Make images responsive and take up the full container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the space without stretching */
+    display: block; /* Prevent any space below the images */
+}
+
+.box-5 .image-item .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Title size */
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* White text color for the title */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+}
+
+/* Box 6 Styling */
+.box-6 {
+    background-color: #ffffff; /* Set white background for the box */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.box-6 .left-side {
+    width: 50%; /* Take up half the width */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.box-6 .right-side {
+    width: 50%; /* Take up the other half */
+    display: flex;
+    justify-content: center;
+}
+
+.box-6 .left-side h1 {
+    font-size: 32px; /* Headline size */
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Black text color */
+}
+
+.box-6 .left-side p {
+    font-size: 16px; /* Text size */
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Black text color */
+    line-height: 1.6;
+}
+
+.box-6 .btn {
+    display: inline-block;
+    background-color: #000000; /* Black background for button */
+    color: #ffffff; /* White text color */
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.box-6 .right-side img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image fits correctly */
+}
+
+/* Box 7: Get in touch with Yellow Background */
+.box-7 {
+    background-color: #f8dd9f; /* Set background color to yellow */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.box-7 .left-side {
+    width: 45%; /* Left side takes up 45% of the width */
+    padding-right: 20px;
+}
+
+.box-7 .right-side {
+    width: 50%; /* Right side takes up 50% */
+}
+
+.box-7 .left-side h1 {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Black color for headline */
+}
+
+.box-7 .left-side p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Black text color */
+    line-height: 1.6;
+}
+
+.box-7 form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box-7 form label {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000; /* Black text for labels */
+}
+
+.box-7 form input,
+.box-7 form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-7 form textarea {
+    height: 100px; /* Set a specific height for the textarea */
+    resize: vertical; /* Allow the user to resize vertically */
+}
+
+.box-7 .btn {
+    display: inline-block;
+    background-color: #000000; /* Black background for button */
+    color: #ffffff; /* White text color */
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Box 8: Final Box with 4 Columns */
+.box-8 {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.box-8 .column {
+    width: 23%; /* Each column takes up 23% of the width */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.box-8 h3, .box-8 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box-8 p, .box-8 ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.box-8 ul {
+    padding-left: 20px; /* Indentation for list items */
+}
+
+.box-8 a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+}
+
+.box-8 a:hover {
+    text-decoration: underline;
+}
+
+.box-8 .social-icons img {
+    width: 30px; /* Size of the icons */
+    margin-right: 10px;
+    vertical-align: middle; /* Align icons properly */
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+    .box-8 .column {
+        width: 48%; /* Two columns on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box-8 .column {
+        width: 100%; /* Full width for each column on very small screens */
+    }
+}
