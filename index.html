@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Box</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Box 1 -->
@@ -93,30 +94,24 @@
         </div>
     </div>
 
-    <!-- Box 7: Get in touch -->
     <div class="box-7">
         <div class="left-side">
             <h1>Get in touch</h1>
-            <p>We are awwwards and we are here to serve!<br>How can we help you?<br>If you have any questions, please contact us through this form.<br>Please complete the following fields.</p>
+            <p><strong>We are awwwards and we are here to serve!<br>How can we help you?</strong><br>If you have any questions, please contact us through this form.<br>Please complete the following fields.</p>
         </div>
         <div class="right-side">
             <form>
-                <label for="name">Dit navn*</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="phone">Telefonnummer*</label>
-                <input type="text" id="phone" name="phone" required>
-
-                <label for="email">Din email*</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Eventuel besked*</label>
-                <textarea id="message" name="message" required></textarea>
-
+                <input type="text" id="name" name="name" required placeholder="Dit navn*">
+                <input type="text" id="phone" name="phone" required placeholder="Telefonnummer*">
+                <input type="email" id="email" name="email" required placeholder="Din email*">
+                <textarea id="message" name="message" required placeholder="Eventuel besked*"></textarea>
+    
+                <!-- Button: No wrapper needed -->
                 <a href="#submit" class="btn">KONTAKT OS</a>
             </form>
         </div>
     </div>
+    
 
     <!-- Box 8: Final Box with 4 Columns -->
     <div class="box-8">
@@ -127,7 +122,7 @@
             <p>2300 Firmaby</p>
             <p>Tlf.: +45 12 34 56 78</p>
             <p>Mail: info@roosterfried.dk</p>
-            <h4>Åbningstider</h4>
+            <p><strong>Åbningstider</strong></p>
             <p>Mandag - fredag: 10.00 - 17.30</p>
             <p>Lørdag 10.00 - 15.00</p>
             <div class="social-icons">
