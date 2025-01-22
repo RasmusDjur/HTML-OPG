@@ -266,34 +266,38 @@ p br:nth-of-type(3) {
     align-items: center;
     padding: 10%;
 }
-.box-7 .kontakt {
-    display: flex;
-    justify-content: right;
-}
 .box-7 .left-side {
     width: 50%; 
     padding-right: 20px;
     padding-bottom: 120px;   
 }
+.box-7 .left-side h1 {
+    font-size: 86px;
+}
 .box-7 .right-side {
     width: 50%; 
 }
-.box-7 .left-side h1 {
-    font-size: 86px;
+.box-7 .kontakt {
+    max-width: fit-content;
+    display: flex;
+    align-items: flex-end;
+}
+
+.kontaktdiv {
+    display: flex;
+    justify-content: end;
 }
 .box-7 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.box-7 form textarea {
+.box-7 form textarea, input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
 }
-.box-7 form textarea {
+textarea {
     height: 100px; /* Set a specific height for the textarea */
     resize: vertical; /* Allow the user to resize vertically */
 }
@@ -323,6 +327,10 @@ p br:nth-of-type(3) {
     margin-right: 10px;
     vertical-align: middle; /* Align icons properly */
 }
+
+
+
+
 /* Responsiveness for small screens */
 @media (max-width: 768px) {
     .box-8 .column {
