@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden; /* Skjuler vandret scroll og indhold, der stikker udenfor */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -11,6 +14,8 @@ body {
 
 ul {
     list-style: none;
+    
+    margin-right: 20px;
 }
 
 a {
@@ -48,6 +53,10 @@ p.hvid {
     line-height: 1.6;
 }
 
+.box {
+    padding: 0 10% 0 10%;
+    
+}
 .box-8 p, .box-8 ul {
     font-size: 14px;
 }
@@ -57,9 +66,11 @@ p.hvid {
 }
 
 .btn {
+    white-space: nowrap;
     background-color: #000000; 
     color: #ffffff; 
     padding: 12px 24px;
+    margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -87,9 +98,11 @@ p.hvid {
     color: #000000; 
 }
 
+
 /* BOX1 */
 /* box-1 styling */
-.box {
+.box-1 {
+    width: 100%;
     background-color: #ffffff;  
     display: flex;
     justify-content: space-between; 
@@ -99,7 +112,7 @@ p.hvid {
 /* Logo styling */
 .logo {
     flex: 1; 
-    padding-left: 10%;
+   
 }
 .logo img {
     width: auto; 
@@ -107,25 +120,39 @@ p.hvid {
 }
 /* Menu styling */
 .menu {
-    flex: 2; 
+    flex: 3;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center; 
+    gap: 20px; 
 }
 .menu ul {
     display: flex;
-    gap: 20px; 
+    
 }
 .menu a {
     font-size: 16px;
-    padding: 10px;
+    
 }
 /* Button styling */
 .book-meeting {
     flex: 1; 
     display: flex;
     justify-content: flex-end; 
-    padding-right: 10%;
+    
 }
+
+
+.text-overlay h1 {
+    font-size: 80px;
+}
+
+
+
+
+
+
+
 
 /* BOX2 */
 /* box-2 styling */
@@ -135,7 +162,6 @@ p.hvid {
     background-size: cover; 
     background-position: center; 
     height: 100vh; 
-    padding-left: 10%;
     display: flex; 
     align-items: center; 
     justify-content: flex-start; 
@@ -145,9 +171,7 @@ p.hvid {
     font-size: 24px;
     margin-bottom: 30px;
 }
-.text-overlay h1 {
-    font-size: 86px;
-}
+
 /* btn2 styling */
 .btn2 {
     background-color: #ffffff; 
@@ -169,6 +193,7 @@ p.hvid {
 .text-content p {
     margin-bottom: 30px;
     padding-bottom: 20px;
+    max-width: 850px;
 }
 
 /* BOX4 */
@@ -180,14 +205,15 @@ p.hvid {
 }
 /* left-side styling */ 
 .box-4 .left-side img {
-    padding: 180px 0px 180px 170px; 
+    padding: 10% 5% 10% 0%;
     width: 100%; 
     max-width: auto; 
     height: auto; 
 }
 /* right-side styling */
 .box-4 .right-side {
-    padding-left:100px;
+    padding: 10% 0 10% 0;
+    
 }
 .box-4 .right-side h1 {
     margin-bottom: 20px;
@@ -223,7 +249,9 @@ p br:nth-of-type(3) {
     object-fit: cover; 
     display: block; 
 }
+/* text styling */
 .box-5 .image-item .title {
+    white-space: nowrap;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -249,11 +277,18 @@ p br:nth-of-type(3) {
 .box-6 .left-side {
     width: 50%; 
     padding-right: 20px; 
-    padding-left: 10%;
+    
 }
 /* right-side styling */
+.box-6 .left-side {
+    padding: 10% 0 10% 0;
+    
+}
+
+
+/* right-side styling */
 .box-6 .right-side {
-    padding: 180px 170px 180px 0px; 
+    padding: 10% 0% 10% 5%;
     width: 50%; 
     max-width: auto;
     height: auto; 
@@ -270,13 +305,14 @@ p br:nth-of-type(3) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10%;
+    
+
 }
 /* left-side styling */
 .box-7 .left-side {
     width: 50%; 
-    padding-right: 20px;
-    padding-bottom: 120px;   
+    padding: 10% 5% 10% 0%;
+      
 }
 .box-7 .left-side h1 {
     font-size: 86px;
@@ -312,17 +348,19 @@ textarea {
 /* BOX8 */
 /* Box 8: Final Box with 4 Columns */
 .box-8 {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #000000; 
     color: #ffffff; 
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px;
     flex-wrap: wrap; 
 }
 .box-8 .column {
+    padding: 5px;
     width: 25%; 
     margin-bottom: 20px; 
-    padding-left: 170px;
+    
 }
 .box-8 h3, .box-8 h4 {
     font-weight: 400;
@@ -334,9 +372,180 @@ textarea {
 .box-8 .social-icons img {
     width: 25px; 
     margin-right: 10px;
+    margin-top: 20px;
     vertical-align: middle; 
 }
 
+@media (max-width: 1024px) {
+    
+    .logo img {
+        max-width: 100px; /* Endnu mindre logo til små skærme */
+    }
+
+    .menu a {
+        font-size: 12px; /* Mindre skrifttype til links */
+    }
+
+    .book-meeting .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .text-overlay h1 {
+        font-size: 64px; /* Mindre overskrift til medium skærme */
+    }
+
+    .text-overlay p {
+        font-size: 20px; /* Mindre brødtekst */
+    }
+
+    .text-overlay h1 {
+        font-size: 68px;
+    }
+
+    .box-5 .image-item .title {
+      
+        font-size: 50px; 
+      
+    }
+
+
+    .box-8 h3 {
+        font-size: 22px;
+    }
+
+    .box-8 p {
+        font-size: 10px;
+    }
+
+    .box-8 ul {
+        font-size: 10px;
+    }
+   
+
+}
+
+
+@media (max-width: 768px) {
+    .box-1 {
+        height: 140px;
+   
+    }
+    .logo img {
+        max-width: 80px; /* Endnu mindre logo til små skærme */
+    }
+
+    .menu a {
+        font-size: 10px; /* Mindre skrifttype til links */
+    }
+
+    .book-meeting .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    h1{
+        font-size: 44px;
+    }
+
+    .box-5 .image-item .title {
+      
+        font-size: 30px; 
+      
+    }
+
+    .box-7 .left-side h1 {
+        font-size: 50px;
+    }
+
+    .box-8 h3 {
+        font-size: 18px;
+    }
+
+    .box-8 p {
+        font-size: 8px;
+    }
+
+    .box-8 ul {
+        font-size: 8px;
+    }
+
+  
+
+
+}
+
+@media (max-width: 480px) {
+   
+    .box-1 {
+        height: 200px;
+   
+    }
+    .logo img {
+        max-width: 80px; /* Endnu mindre logo til små skærme */
+    }
+
+    .menu a {
+        font-size: 12px; /* Mindre skrifttype til links */
+    }
+
+    .book-meeting .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 14px
+    }
+    
+    .text-overlay h1 {
+        font-size: 60px;
+    }
+
+    .box-4 .left-side img {
+        display: none;
+    }
+
+    .box-5 .image-item .title {
+      
+        font-size: 20px; 
+      
+    }
+
+    .box-6 .right-side  {
+        display: none;
+    }
+
+    .box-6 .left-side {
+        width: 100%; 
+        
+        
+    }
+
+    .box-7 .left-side h1 {
+        font-size: 40px;
+    }
+
+    .box-7 .left-side p {
+        font-size: 18px;
+    }
+
+    .box-8 h3 {
+        font-size: 12px;
+    }
+
+    .box-8 p {
+        font-size: 6px;
+    }
+
+    .box-8 ul {
+        font-size: 6px;
+    }
+}
 
 
 
